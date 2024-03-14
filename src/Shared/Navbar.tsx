@@ -45,12 +45,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 to="/super-heros"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Traditional Heros
-              </Link>
+              </Link> */}
+              <Link to="/heroform">Add Super hero</Link>
             </li>
             <li>
               <Link
@@ -66,6 +67,22 @@ export default function Navbar() {
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Github Users
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/PaginatedColors"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Colors
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/InfiniteColors"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Infinite Colors
               </Link>
             </li>
           </ul>

@@ -6,6 +6,9 @@ import RQSuperHeros from "./pages/RQSuperHeros";
 import SuperHero from "./pages/SuperHero";
 import GithubUsers from "./pages/GithubUsers";
 import GithubUserAndFollower from "./pages/GithubUserAndFollower";
+import Colors from "./pages/PaginatedQuery";
+import InfinitedQuery from "./pages/InfinitedQuery";
+import { ProfileForm } from "./pages/HeroForm";
 
 const routes = createBrowserRouter([
   {
@@ -35,6 +38,18 @@ const routes = createBrowserRouter([
       {
         path: "/GithubProfile/:id",
         element: <GithubUserAndFollower></GithubUserAndFollower>,
+      },
+      {
+        path:"/PaginatedColors",
+        element:<Colors/>
+      },
+      {
+        path:"/InfiniteColors",
+        element:<InfinitedQuery/>
+      },
+      {
+        path:"/heroform",
+        element:<><ProfileForm/><RQSuperHeros/></>
       },
     ],
   },

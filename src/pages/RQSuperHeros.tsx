@@ -1,6 +1,7 @@
 import HeroCard from "@/Shared/Card";
 import { Button } from "@/components/ui/button";
 import { Hero } from "@/types";
+import request from "@/utils/axios.utils";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
@@ -18,9 +19,9 @@ export default function RQSuperHeros() {
   } = useQuery({
     queryKey: ["super-heros"],
     queryFn: () => {
-      return axios.get(
-        "https://silver-happiness-j97r6xqp45phpwvp-4000.app.github.dev/superheroes"
-      );
+      return request({
+        url: "/superheroes",
+      });
     },
     // gcTime:5000
     // refetchOnMount:true,
@@ -72,8 +73,13 @@ export default function RQSuperHeros() {
       {/* {data?.data.map((item: Hero) => (
         <HeroCard key={item.id} title={item.name} content={item.alterEgo} />
       ))} */}
-      {data?.data.map((item: Hero,index:number) => (
-        <HeroCard link={`/rq-super-heros/${item.id}`} key={index} title={item.name}  content={item.alterEgo}/>
+      {data?.data.map((item: Hero, index: number) => (
+        <HeroCard
+          link={`/rq-super-heros/${item.id}`}
+          key={index}
+          title={item.name}
+          content={item.alterEgo}
+        />
       ))}
     </div>
   );

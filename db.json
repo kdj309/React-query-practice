@@ -1,24 +1,71 @@
 {
   "superheroes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Batman 2",
       "alterEgo": "Bruce Wayne"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Superman",
       "alterEgo": "Clark Kent"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "id": 1710411211800,
+      "name": "bahubali",
+      "alterEgo": "prabhas"
+    }
+  ],
+  "colors": [
+    {
+      "id": "1",
+      "name": "Red"
+    },
+    {
+      "id": "2",
+      "name": "Green"
+    },
+    {
+      "id": "3",
+      "name": "Blue"
+    },
+    {
+      "id": "4",
+      "name": "Pink"
+    },
+    {
+      "id": "5",
+      "name": "Purple"
+    },
+    {
+      "id": "6",
+      "name": "Black"
+    },
+    {
+      "id": "7",
+      "name": "White"
+    },
+    {
+      "id": "8",
+      "name": "Orange"
+    },
+    {
+      "id": "9",
+      "name": "Yellow"
+    },
+    {
+      "id": "10",
+      "name": "Grey"
     }
   ]
 }
